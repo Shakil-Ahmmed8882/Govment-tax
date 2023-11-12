@@ -1,4 +1,15 @@
+import { data } from "autoprefixer";
+import { useEffect, useState } from "react";
+import Client from "./Client";
+
 const Clients = () => {
+  const [clients,setClients] = useState([])
+  useEffect(()=>{
+    fetch('/clients.json')
+    .then(res=> res.json())
+    .then(data => setClients(data.clients))
+  },[])
+
     return (
       <div className="overflow-x-auto">
         <table className="table table-xs">
@@ -18,22 +29,9 @@ const Clients = () => {
               <th>একশন</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <th>1</th>
-              <th>গাইবান্ধা সদর </th>
-              <th>১নং লক্ষীপুর ইউ‌ পি</th>
-              <th>গবিন্দপুর</th>
-              <th>2</th>
-              <th>মোছা: আয়শা বেগম</th>
-              <th>01712-21895</th>
-              <th>3510 </th>
-              <th>1200</th>
-              <th>100</th>
-              <th>100</th>
-              <th>একশন</th>
-            </tr>
-          </tbody>
+          {
+            clients?.map((client,idx) => <Client key={idx} client={client}></Client>)
+          }
         </table>
       </div>
     );

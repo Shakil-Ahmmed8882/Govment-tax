@@ -1,13 +1,13 @@
-// import ClientDetails from "../shared/ClientDetails/ClientDetails";
-// import Clients from "../shared/Clients/Clients";
+import ClientDetails from "../shared/ClientDetails/ClientDetails";
+import Clients from "../shared/Clients/Clients";
 import ClientUpdate from "../shared/ClientUpdate/ClientUpdate";
 
 const Household = () => {
   return (
     <div >
-      {/* <Clients></Clients> */}
+      <Clients></Clients>
       {/* <ClientDetails></ClientDetails> */}
-      <ClientUpdate></ClientUpdate>
+      {/* <ClientUpdate></ClientUpdate> */}
       
       
     </div>
