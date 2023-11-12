@@ -142,7 +142,7 @@ const Village = () => {
                       <button
                         onClick={() => handleDelete()}
                         className=" px-1  md:px-3 text-white">
-                        <AiFillDelete className="text-primaryClr text-[18px] md:text-3xl"></AiFillDelete>
+                        <AiFillDelete className="text-[#ff5959] text-[18px] md:text-3xl"></AiFillDelete>
                       </button>
                     </td>
                   </tr>

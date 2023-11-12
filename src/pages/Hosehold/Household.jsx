@@ -11,7 +11,6 @@ const Household = () => {
       {/* <ClientDetails></ClientDetails> */}
       {/* <ClientUpdate></ClientUpdate> */}
       
-      
     </div>
   );
 };
