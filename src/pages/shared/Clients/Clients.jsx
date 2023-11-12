@@ -1,13 +1,14 @@
 import { data } from "autoprefixer";
 import { useEffect, useState } from "react";
 import Client from "./Client";
+import BASE_URL from "../../../api/api";
 
 const Clients = () => {
   const [clients,setClients] = useState([])
   useEffect(()=>{
-    fetch('/clients.json')
-    .then(res=> res.json())
-    .then(data => setClients(data.clients))
+    fetch(BASE_URL + "/collection/house")
+      .then((res) => res.json())
+      .then((data) => setClients(data));
   },[])
 
     return (
@@ -30,7 +31,7 @@ const Clients = () => {
             </tr>
           </thead>
           {
-            clients?.map((client,idx) => <Client key={idx} client={client}></Client>)
+            clients?.map((client) => <Client key={client._id} client={client}></Client>)
           }
         </table>
       </div>

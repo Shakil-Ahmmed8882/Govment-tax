@@ -1,7 +1,6 @@
-
 // import TopNavBar from "../Dashboard/TopNavBar";
 import DashboardRoutes from "../Dashboard/DashboardRoutes";
-import MetaStyle from "../Dashboard/MetaStyle";
+
 import { Outlet } from "react-router-dom";
 
 const MainDashboard = () => {
@@ -9,9 +8,7 @@ const MainDashboard = () => {
   return (
     <>
       {/* component */}
-      <MetaStyle></MetaStyle>
-      {/* you can clone or fork the repo if you want */}
-      {/* https://github.com/bluebrown/tailwind-zendesk-clone   */}
+
       <div className="h-full w-full  flex overflow-hidden antialiased text-gray-800 bg-white">
         {/* section body side nav */}
         <div className="flex-1 flex flex-col">

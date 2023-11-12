@@ -1,5 +1,5 @@
 const Client = ({ client }) => {
-      console.log(Object.keys(client).join(','));
+      // console.log(Object.keys(client).join(','));
     const {gram,
         thanaHeadName,
         fatherOrHusbandName,
