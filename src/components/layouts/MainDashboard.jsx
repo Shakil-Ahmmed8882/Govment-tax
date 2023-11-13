@@ -11,7 +11,6 @@ const MainDashboard = () => {
 
   const handleReveal = () =>{
     setReveal(!reveal)
-
   }
   return (
     <>
@@ -23,15 +22,15 @@ const MainDashboard = () => {
           {/* Dashboard routers */}
           <main className=" flex-grow flex min-h-0 border-t relative">
           {
-           reveal? <img className="w-6 h-9 my-1 cursor-pointer absolute left-[300px] top-0" src={left_arrow} alt="" onClick={handleReveal} />:
-             <img className="w-6 h-9 left-3 absolute cursor-pointer" src={right_arrow} alt="" onClick={handleReveal}/>
+           reveal? <img className="w-6 h-9 hidden md:block my-1 cursor-pointer absolute left-[300px] top-0" src={left_arrow} alt="" onClick={handleReveal} />:
+             <img className="w-6 h-9 left-3 absolute hidden md:block cursor-pointer" src={right_arrow} alt="" onClick={handleReveal}/>
 
           }
             
             <section className={` ${reveal?'flex':'hidden'} transition-all flex-col p-4 w-full max-w-sm flex-none   min-h-0 overflow-auto`}>
               <DashboardRoutes></DashboardRoutes>
             </section>
-            <section className="flex-1 bg-[#f9fff4]">
+            <section className="flex-1 bg-[#f8fff3]">
               <Outlet></Outlet>
             </section>
           </main>

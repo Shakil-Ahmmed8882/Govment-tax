@@ -7,9 +7,12 @@ const Household = () => {
   return (
     <div >
       {/* <SearchBar></SearchBar>
-      <Clients></Clients> */}
+      // <Clients></Clients> */}
       {/* <ClientDetails></ClientDetails> */}
       {/* <ClientUpdate></ClientUpdate> */}
+      
+
+
       
     </div>
   );

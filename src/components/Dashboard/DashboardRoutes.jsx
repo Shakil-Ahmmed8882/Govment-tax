@@ -1,11 +1,11 @@
 import { NavLink } from "react-router-dom";
-import dashboard from "../../../public/icons/dashboard.png";
-import setting from "../../../public/icons/setting.png";
-import village from "../../../public/icons/village.png";
-import household from "../../../public/icons/househld.png";
-import tax from "../../../public/icons/tax.png";
-import business from "../../../public/icons/business.png";
-import user from "../../../public/icons/user.png";
+import dashboard from "/icons/dashboard.png";
+import setting from "/icons/setting.png";
+import village from "/icons/village.png";
+import household from "/icons/househld.png";
+import tax from "/icons/tax.png";
+import business from "/icons/business.png";
+import user from "/icons/user.png";
 
 
  const data =  [
@@ -22,7 +22,7 @@ import user from "../../../public/icons/user.png";
 
 
 const DashboardRoutes = () => (
-  <ul className=" ">
+    <ul className=" ">
     <header className="flex-none flex h-16 border-t px-4 w-full items-center">
       <h1 id="page-caption" className="font-semibold text-4xl">
         Dashboard
